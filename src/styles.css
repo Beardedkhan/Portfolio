@@ -1,0 +1,471 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+    header h1 {
+        font-size: 24px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+nav ul {
+    list-style: disc;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+            nav ul li a:hover {
+                color: #ffcc00;
+                font-family: 'Architects Daughter', cursive;
+            }
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+    footer p {
+        margin-bottom: 10px;
+    }
+
+/* Media Queries */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.widget {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+    .widget-header h3 {
+        margin: 0;
+    }
+
+.widget-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-content li {
+    margin-bottom: 5px;
+}
+
+.interest-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.skill-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.progress-bar {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 8px;
+}
+
+.progress {
+    background-color: #6c63ff;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.resume-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #6c63ff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resume-content h2 {
+    color: #000000;
+}
+
+.header-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .header-button:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+.resume-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .resume-button:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+.resume-popup {
+    background-color: #f1f1f1; /* Gray color for the panel */
+    padding: 20px;
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.category-icon {
+    margin-right: 5px;
+}
+
+.widget-box {
+    display: inline-table;
+    justify-content: space-around;
+    align-items: self-end;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+#projects {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.project-icon {
+    color: #fca311;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.project-details {
+    margin-bottom: 20px;
+}
+
+    .project-details h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .project-details p {
+        font-size: 14px;
+        color: #777;
+    }
+
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0366d6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .github-link:hover {
+        background-color: #024ea2;
+    }
+
+.github-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+    .photo-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .photo-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .photo-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .photo-item:hover:before {
+        opacity: 1;
+    }
+
+    .photo-item:hover:before,
+    .photo-item:hover img {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .photo-item:before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .photo-item span {
+        font-size: 14px;
+        margin-top: 8px;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .photo-item:hover span {
+        opacity: 1;
+    }
+
+.description {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.photo-item:hover .description {
+    opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* Apply the comic font to the write-up section */
+.about-me {
+    font-family: 'Architects Daughter', cursive;
+    /* ... (existing styles) ... */
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.about-me {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Set the background color to a semi-transparent black */
+    border-radius: 10px;
+}
+
+    .about-me p {
+        margin-bottom: 10px;
+        color: #fff; /* Set the text color to white */
+    }
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .landing-page .curtain {
+        text-align: center;
+        color: #fff;
+    }
+
+    .landing-page:hover {
+        background-color: rgba(0, 0, 0, 0.8); /* Set the background color to a darker semi-transparent black */
+    }
+
+        .landing-page:hover .curtain {
+            opacity: 0.7;
+        }
+
+            .landing-page:hover .curtain h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .landing-page:hover .curtain p {
+                font-size: 18px;
+            }
+
+/* Miscellaneous */
+.text-center {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
